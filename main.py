@@ -1,4 +1,4 @@
-import json
+import json5
 import argparse
 from trainer import train
 
@@ -14,7 +14,7 @@ def main():
 
 def load_json(settings_path):
     with open(settings_path) as data_file:
-        param = json.load(data_file)
+        param = json5.load(data_file)
 
     return param
 
